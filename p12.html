@@ -1,0 +1,90 @@
+<html></html>
+    <head>
+        <title>HTML TABLES</title>
+        <style>
+            table td img{
+                width: 60px;
+                height: 60px;
+                border-radius: 100px;
+                border: 2px solid orangered;
+                padding: 5px;
+            }
+            table{
+                border-collapse: collapse;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            table td{
+                color: rgb(73, 73, 73);
+                background-color: #fff;
+            }
+            table th{
+                background-color: #15089b;
+                color: #fff;
+                border: 2px solid #fff;
+            }
+            table td:hover{
+                background-color: #14089b2e;
+                color: #15089b;
+            }
+            body{
+                background-color: #ccc;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <center>
+            <h1>HTML TABLES</h1>
+        </center>
+        <hr>
+
+        <table border="1" cellpadding="20" cellspacing="0" align="center" width="80%">
+            <caption>Table with rowspan</caption>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+            </tr>
+            <tr>
+                <th rowspan="3">username</th>
+            </tr>
+            <tr>
+                <th>Firstname</th>
+                <td>John</td>
+                <td>John1</td>
+            </tr>
+            <tr>
+                <th>Lastname</th>
+                <td>Doe</td>
+                <td>Doe1</td>
+            </tr>
+
+            <tr>
+               <th>Profile</th>
+               <th></th>
+               <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSepURZt-f112wNUGblzXPMA_2fAGMKHVDZUg&s" alt=""></td> 
+               <td><img src="https://media.glamour.com/photos/5696d35bfbaa9ddf58554452/master/w_1600%2Cc_limit/weddings-blogs-save-the-date-0515mark-zuckerberg-hoodiegate_fa.jpg" alt=""></td> 
+            </tr>
+
+            <tr>
+                <th rowspan="3">Address</th>
+            </tr>
+
+            <tr>
+                <th>Address1</th>
+                <td>test address</td>
+                <td>test address</td>
+
+            </tr>
+
+            <tr>
+                <th>Address2</th>
+                <td>test address</td>
+                <td>test address</td>
+
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>HOME</title>
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+            }
+            *{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            a{
+                font-size: 1.3rem;
+                text-decoration: none;
+                color: #0c0c0c;
+            }
+            a:hover{
+                color: green;
+            }
+
+            .hero{
+                display: flex;
+                background-color: #0c0c0c;
+                color: #fff;
+                padding: 30px;
+                align-items: center;
+            }
+            .left{
+               flex: 1;
+            }
+            .right{
+            background-color: #0c0c0c;
+            flex: 1;
+            }   
+
+            .left h1{
+                font-size: 50px;
+                margin-bottom: 0px;
+            }
+            .left p{
+                font-size:20px ;
+            }
+            .left a{
+                color: #fff;
+                text-decoration: underline;
+            }
+            .btn{
+                border: none;
+                padding: 10px;
+                min-width: 150px;
+                border-radius: 10px;
+            }
+            .btn:hover{
+                background-color: transparent;
+                color: #fff;
+                border: 2px solid #fff;
+                cursor: pointer;
+            }
+
+            .right img{
+                margin-left: 100px;
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                border: 10px solid #486eea;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div style="display: flex; background-color: #fff; padding: 10px; align-items: center; justify-content: space-around;border-bottom: 2px solid #ccc;">
+            <img src="https://csite.nicepage.com/Images/logo-w.png" alt="please wait...">
+
+            <div style="display: flex; gap: 30px;"> 
+               <p> <a href="./home.html">Home</a></p>
+                <p><a href="./about.html">About Us</a></p>
+               <p> <a href="./contact.html">Contact us</a></p>
+            </div>
+        </div>
+
+        <div class="hero">
+                <div class="left">
+                    <h1>Case Studies</h1>
+                    <p class="subtitle">Nibh venenatis cras sed felis eget velit aliquet sagittis id. Tellus pellentesque eu tincidunt tortor aliquam nulla.</p>
+                    <p>Image from  <a href="">Free Pic</a></p>
+                    <button class="btn">READ MORE</button>  
+                </div>
+
+                <div class="right">
+                        <img src="https://www.globalts.com/images/easyblog_shared/October_2023/10-25-23/b2ap3_thumbnail_modernTechnology_620977929_400.jpg" alt="">
+                </div>
+        </div>
+
+
+    </body>
+</html>

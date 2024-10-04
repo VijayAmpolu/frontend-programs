@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>man</title>
+    
+        <style>
+            *{
+                margin: 0;
+                padding: o;
+                box-sizing: border-box;
+            }
+            .container{
+                min-height: 100vh;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container .img1, .img2{
+                background-color: white;
+                width: 200px;
+                position: absolute;
+                bottom: 0;
+                animation: movingAnimation 20s linear alternate;
+            }
+            @keyframes movingAnimation{
+                0%{
+                    transform: translateX(-100%);
+                }
+                100%{
+                    transform: translateX(100%);
+
+                }
+            }
+            .road{
+                width: 100%;
+                height: 50px;
+                background-color: black;
+                position: absolute;
+                bottom: -38px;
+            }
+            .img2{
+                position: absolute;
+                width: 200px;
+                background-color: transparent important;
+                bottom: 100px;
+            }
+            .clouds{
+                position: absolute;
+                width: 100%;
+                top: 0px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .clouds img{
+                width: 300px;
+                animation: cloudsanimation 1s ease-in-out infinite alternate;
+            }
+            @keyframes cloudanimation{
+                0%{
+                    transform: translateY(-30px);
+                }
+                100%{
+                    transform: translateY(-30px);
+                }
+            }
+            body{
+                overflow: hidden;
+            }
+        </style>
+
+        
+    </head>
+    <body>
+        <section class="container">
+            <img class="img1" src="https://cdnl.iconscout.com/lottie/premium/thumb/walking-man-8068170-6451396.gif" alt="no image" style="animation-delay: 0s;">
+            <img class="img1" src="https://cdnl.iconscout.com/lottie/premium/thumb/walking-man-8068170-6451396.gif" alt="no image" style="animation-delay: 0.5s;">
+            <img class="img1" src="https://cdnl.iconscout.com/lottie/premium/thumb/walking-man-8068170-6451396.gif" alt="no image">
+            <img class="img1" src="https://cdnl.iconscout.com/lottie/premium/thumb/walking-man-8068170-6451396.gif" alt="no image" style="animation-delay: 1s;">
+            <div class="road"></div>
+            <img src="https://2.bp.blogspot.com/-jJ_0j8Ro8ng/U9FCIxgfLfI/AAAAAAAAYGE/EVocJN9AhqM/s1600/flying+birds.gif" alt="no image" class="img2">
+            <div class="clouds">
+                <img src="https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-clouds-floating-in-the-sky-png-image_11918815.png" alt="" style="animation-delay: 0s;">
+                <img src="https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-clouds-floating-in-the-sky-png-image_11918815.png" alt="" style="animation-delay: 0.5s;">
+                <img src="https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-clouds-floating-in-the-sky-png-image_11918815.png" alt="" style="animation-delay: 1s;">
+            </div>
+         </section>
+    </body>
+</html>

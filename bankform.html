@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <title>Bank Account</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            section{
+                min-height: 100vh;
+                background-color: rgb(255, 0, 21);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 30px;
+            }
+            form{
+                width: 70%;
+                background-color: #fff;
+                padding: 30px;
+            }
+            span{
+                color: red;
+            }
+            label{
+                display: block;
+                margin-top: 10px;
+            }
+            input[type="text"], input[type="date"], select, input[type="tel"]{
+                padding: 8px;
+                border: none;
+                outline: none;
+                border: 1px solid #ccc;
+                width: 300px;
+
+            }
+            input[type="text"]:focus{
+                box-shadow: 0px 0px 3px rgba(255, 0, 21, 0.733);
+                border: 1px solid rgb(255, 0, 21);
+            }
+
+            button[type="button"]{
+                padding: 10px;
+                width: 150px;
+                background-color: transparent;
+                border: none;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                font-size: 1.1rem;
+            }
+            button[type="button"]:hover{
+                background-color: #cccccc59;
+            }
+            .btns{
+                margin-top: 30px;
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: end;
+                padding: 10px;
+            }
+
+            button[type="submit"]{
+                border: none;
+                width: 150px;
+                border-radius: 10px;
+                background-color: rgb(255, 0, 21);
+                color: #fff;
+                padding: 10px;
+            }
+            button[type="submit"]:hover{
+                background-color: rgb(255, 39, 57);
+            }
+            button{
+                cursor: pointer;
+            }
+            h1{
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <form>
+                <center>Credit Card Application Form</center>
+
+                <h4>Personal Information</h4>
+
+                <label for="">Title <span>*</span></label>
+                <div style="display: flex; gap: 50px;">
+                    <label for=""><input type="radio">Mr.</label>
+                    <label for=""><input type="radio">Mrs.</label>
+                    <label for=""><input type="radio">Miss.</label>
+                    <label for=""><input type="radio">Dr.</label>
+                    <label for=""><input type="radio">Other.</label>
+                </div>
+                <label for="">Full Name <span>*</span></label>
+                <div style="display: flex; gap: 30px;">
+                    <div>
+                        <input type="text">
+                        <label for="" style="margin-top: 2px;">Firstname</label>
+                    </div>
+                    <div>
+                        <input type="text">
+                        <label for="" style="margin-top: 2px;">Lastname</label>
+                    </div>
+                </div>
+                <br>
+
+                <label for="">Gender <span>*</span></label>
+                <label for=""><input type="radio">Male</label>
+                <label for=""><input type="radio">Female</label>
+                <br>
+                <label for="">Mother's Maiden Name <span>*</span></label>
+                <input type="text">
+
+                <br>
+                <label for="">Date of birth <span>*</span></label>
+                <input type="date" name="" id="">
+                <small>Date</small>
+
+                <br>
+                <label for="">Occupation <span>*</span></label>
+                <input type="text" name="" id="">
+
+                <br>
+                <label for="education">Higher education <span>*</span></label>
+                <select name="education" id="education">
+                    <option value="">Please Select</option>
+                    <option value="">PG</option>
+                    <option value="">UG</option>
+                    <option value="">College</option>
+                    <option value="">Secondary</option>
+                    <option value="">primary</option>
+                    <option value="">other</option>
+                </select>
+
+                <br>
+                <label for="">Telephone(Mobile) <span>*</span></label>
+                <input type="tel" min="10" max="13" name="" id="">
+
+                <label for="">Telephone(Home) <span>*</span></label>
+                <input type="tel" min="10" max="13" name="" id="">
+
+                <label for="">Telephone(Work) <span>*</span></label>
+                <input type="tel" min="10" max="13" name="" id="">
+                  
+                <label for="">Email <span>*</span></label>
+                <input type="Email" min="10" max="13" name="" id="">
+
+                <label for="">Marital status <span>*</span></label>
+                <div style="display: flex; gap: 50px;">
+                  <label for=""><input type="radio">Single</label>
+                  <label for=""><input type="radio">Marriage</label>
+                  <label for=""><input type="radio">Divorced</label>
+                  <label for=""><input type="radio">Window(er)</label>
+                </div>
+            
+                <label for="">Passport/National Id</label>
+                <input type="text" name="" id="">
+
+                <label for="">Address</label>
+                <input type="text" name="" id="">
+                 
+                <label for="">street address</label>
+                <input type="text" name="" id="">
+                
+                <div>
+                    <label>Street Address Line 2</label> <br>
+                    <input type="text" name="" id="" style="width: 150px;  
+                    <input type="text" name="" id="" style="width: 150px;">
+                    
+                    
+                </div>
+                 
+                <h1>Finanical Information</h1>
+                <hr><hr>
+                <label for="">Are you a <span>*</span></label>
+                <label for=""><input type="radio">Homeowner</label>
+                <label for=""><input type="radio">Renter</label>
+                <label for=""><input type="radio">Other</label>
+
+                
+
+                <p><b>Declaration</b></p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ullam expedita nam dignissimos quas modi hic quo, possimus est, soluta in quis, eos minima nostrum qui ducimus consequatur autem ipsa.</p>
+                    <div class="btns">
+                    <button type="button">Print Form</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

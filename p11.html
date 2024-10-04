@@ -1,0 +1,58 @@
+<html></html>
+    <head>
+        <title>HTML TABLES</title>
+        <style>
+            table{
+                border-collapse: collapse;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            table th{
+                background-color: orangered;
+                letter-spacing: 2px;
+                color: #fff;
+                border: 2px solid #000;
+            }
+            table td{
+                font-size: 1.3rem;
+            }
+            table td:hover{
+                background-color: #cccccc48;
+                color: orangered;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <center>
+            <h1>HTML TABLES</h1>
+        </center>
+
+        <table border="1" width="60%" cellpadding="20" cellspacing="0">
+            <caption>A Test Table  with merged cells</caption>
+            <tr>
+                <th></th>
+                <th colspan="2">Average</th>
+                <th>Red eyes</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Height</th>
+                <th>Weight</th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <th>Males</th>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <th>Females</th>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+        </table>
+    </body>
+</html>

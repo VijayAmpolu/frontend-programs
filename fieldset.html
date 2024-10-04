@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <title>HTML FORMS</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            section{
+                min-height: 100vh;
+                background-color: rgba(66, 192, 66, 0.932);
+                font-family: 'Times New Roman', Times, serif;
+                padding: 30px;
+            }
+            form{
+                width: 80%;
+                background-color: white;
+                padding: 30px;
+                margin: auto;
+            }
+            fieldset{
+                padding: 20px;
+                margin-top: 20px;
+
+            }
+            input{
+                width: 100%;
+                padding: 10px;
+                font-size: 1rem;
+                margin-top: 8px;
+                border: none;
+                outline: none;
+                border: 1px solid black;
+
+            }
+            input:focus{
+                background-color: aquamarine;
+                border: 1px solid rgb(50, 161, 50);
+            }
+            label{
+                columns: green;
+
+            }
+            legend{
+                font-weight: bold;
+                padding: 10px;
+            }
+            input[type="image"]{
+                width: 100px;
+                display: block;
+            }
+            input[type="checkbox"], input[type="radio"]{
+                width: fit-content;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Text</legend>
+                    <label for="text">Text</label>
+                    <input type="text" placeholder="Enetr the text" name="Exampletext" id="text" readonly required>
+                </fieldset>
+                <fieldset>
+                    <legend>email</legend>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter your email " name="Email" id="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Password</legend>
+                    <label for="password">Enter your password</label>
+                    <input type="password" name="password" id="password" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Date</legend>
+                    <label for="Date">Date</label>
+                    <input type="date" name="date" id="date" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Datetime</legend>
+                    <label for="Datetime">Datetime</label>
+                    <input type="datetime" name="datetime" id="datetime" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Datetimelocal</legend>
+                    <label for="dtl">Datetimelocal</label>
+                    <input type="datetime-local" name="datetime-local" id="dtl" required>
+                </fieldset>
+                <fieldset>
+                    <legend>color</legend>
+                    <label for="color">color</label>
+                    <input type="color" name="color" id="color" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Url</legend>
+                    <label for="url">url</label>
+                    <input type="url" name="url" id="url" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Search</legend>
+                    <label for="Search">Search</label>
+                    <input type="search" name="search" id="search" required>
+                </fieldset>
+                <fieldset>
+                    <legend>file</legend>
+                    <label for="file">filel</label>
+                    <input type="file" name="file" id="file" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Month</legend>
+                    <label for="Month">Month</label>
+                    <input type="month" name="month" id="month" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Week</legend>
+                    <label for="Week">Week</label>
+                    <input type="week" name="week" id="week" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Number</legend>
+                    <label for="Number">Number</label>
+                    <input type="number" name="number" id="number" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Image</legend>
+                    <label for="image">image</label>
+                    <input type="image" name="image" id="image"  src="./image.png" alt="Submit" required>
+                </fieldset>
+                <fieldset>
+                    <legend>time</legend>
+                    <label for="time">Time</label>
+                    <input type="time" name="time" id="time" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Checkbox</legend>
+                    <label for="Lang">Languages</label><br>
+                    <label for="Kannada"><input type="checkbox" name="kn" id="Kannada"> kannada</label><br>
+                    <label for="English"><input type="checkbox" name="en" id="English"> Enaglish</label><br>
+                    <label for="Telugu"><input type="checkbox" name="te" id="Telugu"> Telugu</label>
+                </fieldset>
+                <fieldset>
+                    <legend>radio</legend>
+                    <label for="radio">Gender</label><br>
+                    <label for="Male"><input type="radio" name="male" id="male"> Male</label><br>
+                    <label for="Female"><input type="radio" name="Female" id="female"> Female</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Hidden</legend>
+                    <label for="Hidden">Hidden</label>
+                    <input type="hidden" name="hidden" id="hidden" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Range</legend>
+                    <label for="range">Range</label>
+                    <input type="range" name="range" id="range" min="0" max="100" value="50" required>
+                </fieldset>
+                <fieldset>
+                    <legend>input button</legend>
+                    <input type="button" name="" value="defult button" id="">
+                    <input type="button" name="" value="submit button" id="">
+                    <input type="button" name="" value="reset button" id="">
+                </fieldset>
+                <fieldset>
+                    <legend>Button Element</legend>
+                    <label for="button"><button></button></label><br>
+                    <button type="button">Button</button><br>
+                    <button type="reset">Reset Button</button><br>
+                    <button type="submit">Submit Button</button><br>
+                </fieldset>
+            </form>
+        </section>
+        <script>
+            let date = new Date();
+            console.log(date.toLocaleDateString());
+            console.log(date.toLocaleTimeString());
+            document.getElementById('text').value = date.toLocaleDateString();
+        </script>
+        <script>
+            function sayHello(){
+                alert("Are you sure")
+            }
+        </script>
+    </body>
+</html>

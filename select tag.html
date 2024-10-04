@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>HTML FORM SELECT TAG</title>
+    </head>
+    <BODy>
+        <center>
+            <h1>SELECT TAG</h1>
+            <P>THIS tag is used to create the dropdown in websites</P>
+        </center>
+
+        <select name="language" id="languages">
+            <option value=""disabled selected>SELECT COURSE</option>
+            <option value="html">HTML</option>
+            <option value="html5">HTML5</option>
+            <option value="css">CSS</option>
+            <option value="css3">CSS3</option>
+            <option value="bootstrap">BOOTSTRAP</option>
+              </select>
+
+              <h1>GROUPING OPTIONS IN SELECT</h1>
+              <SELect name="course" id="course">
+                <option value="" disabled selected>SELECT COURSE</option>
+                <optgroup label="month1">
+                <option value="html">HTML</option>
+                <option value="html5">HTML5</option>
+              </optgroup>
+                <optgroup label="month2">
+                <option value="html">CSS</option>
+                <option value="html">CSS3</option>
+              </optgroup>
+              <optgroup label="month3">
+                <option value="bootstrap">BOOTSTRAP</option>
+                <option value="js">JS</option>
+                <option value="reactjs">REACTJS</option>
+              </optgroup>
+            </SELect>
+              <BUTTon type="button" onclick="getvalue()">CALL FUNCTION</BUTTon>
+
+              <script>
+                function getvalue(){
+                    console.log(document.getElementById('course').value);
+                }
+              </script>
+
+    </BODy>
+</html>
